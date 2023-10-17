@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Barlow+Condensed:ital,wght@1,500&family=Black+Ops+One&family=Bree+Serif&family=Caveat:wght@600&family=Great+Vibes&family=Kalam:wght@700&family=Maven+Pro&family=Noto+Sans+SignWriting&family=Permanent+Marker&family=Poppins:ital@1&family=Press+Start+2P&family=Roboto&family=Russo+One&family=Satisfy&family=Skranji:wght@700&family=Ubuntu:ital@1&display=swap');
+
+:root{
+    --font: 'Kalam';
+    --white: #2c79ec;
+    --black: #444;
+    --light-color: #777;
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+.nav_border{
+    border: 1px solid black;
+    width: 98%;
+    height: 13vh;
+    padding: 1%;
+    display: flex;
+    background-color: #fff;
+    border: none;
+}
+
+.nav_border img{
+    width: 9%;
+}
+
+.nav_border .navbar{
+    margin-top: 2%;
+}
+
+.nav_border .navbar a{
+    /* display: flex; */
+    font-size: 1.7rem;
+    color: var(--black);
+    margin-top: 5%;
+    margin-left: 4rem;
+    text-decoration: none;
+    
+}
+
+.nav_border .navbar a:hover{
+    color: var(--light-color);
+}
+
+.home_image{
+    border: 1px solid black;
+    width: 100%;
+    height: 55vh;
+    background-image: url('../assets/Frame\ 427320760.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    section div .home_image{
+        width: 200%;
+    }
+  }
+
+.list_image{
+    display: flex;
+}
+
+.list_image .img_size{
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 22%;
+    border: none;
+}
+
+.list_image .img_size:hover{
+    width: 25%;
+}
+
+.mar1{
+    margin-left: 5%;
+}
+
+.list_heading{
+    display: flex;
+    justify-content:space-around; 
+}
+
+.sec_border{
+    border: 1px solid black;
+    width: 100%;
+    height: 55vh;
+    background-image: url('../assets/Price\ drop\ sept\ web\ \ 1.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+
+  
+  
+  
+  .footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
